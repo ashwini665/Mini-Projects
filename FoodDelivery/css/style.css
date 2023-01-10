@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Roboto:wght@500&display=swap");
+
+/* General css */
+body {
+  height: 2000px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Variable Nav Height */
+
+:root {
+  --navbar-height: 70px;
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  height: var(--navbar-height);
+  border: 1px solid rgb(205, 197, 197);
+}
+
+/* Logo and Image */
+.logo {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-image {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 15px;
+  font-family: "DynaPuff", cursive;
+  /* font-family: 'Roboto', sans-serif; */
+}
+/* List styling */
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.nav-list li {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 10px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.nav-list li:hover {
+  background-color: rgb(232, 230, 230);
+  border-radius: 10px;
+}
+
+/* Search-bar */
+input {
+  width: 400px;
+  padding: 10px;
+  margin-left: 80px;
+  margin-right: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(183, 180, 180);
+  outline: none;
+}
+
+.search-button {
+  background-color: rgb(17, 188, 230);
+  padding: 13px;
+  cursor: pointer;
+  border: none;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+}
+/* Home - main */
+
+#home {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #home::before {
+  content: "";
+  background: url(../images/food1.webp) no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.85;
+} */
+.home-content {
+  width: 50%;
+}
+.home-image {
+  width: 50%;
+}
+.firstHeading {
+  font-size: 60px;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  color: rgb(243, 125, 14);
+}
+
+.secondHeading {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(245, 127, 16);
+}
+.home-desc {
+  /* width: 95%; */
+  padding: 20px;
+}
+.food-homeimage {
+  width: 100%;
+  height: 100%;
+}
+
+.login {
+  padding: 10px;
+  border: none;
+  width: 80px;
+  margin: 10 auto;
+  font-size: 15px;
+  margin-left: 40%;
+  background-color: white;
+  font-size: 18px;
+}
+
+.login:hover {
+  color: rgb(253, 153, 13);
+}
+
+.signup {
+  padding: 10px;
+  border: none;
+  width: 80px;
+  margin: 10 auto;
+  font-size: 15px;
+  margin-left: 15px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* Mid Home Page */
+
+#mid-home-1 {
+  display: flex;
+  background-color: rgb(58, 36, 36);
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 10px;
+  line-height: 1.5;
+  height: 500px;
+}
+
+.delivery-1 {
+  height: 230px;
+}
+
+.order-heading {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.order-desc {
+  font-size: 15px;
+  width: 250px;
+  color: #e0cbc1;
+}
+
+/* Mid Home 2 */
+
+#mid-home-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 500px;
+  padding: 15px;
+}
+
+.download-head {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.download-desc {
+  color: grey;
+  margin-bottom: 20px;
+  font-size: 20px;
+  width: 30%;
+}
+
+.google-play {
+  background-color: black;
+  color: white;
+  padding: 9px;
+  width: 140px;
+  border-radius: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.app-store {
+  background-color: black;
+  color: white;
+  padding: 9px;
+  width: 140px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.icon {
+  padding-right: 10px;
+}
+span {
+  font-size: 20px;
+}
+.iphone-image-1 {
+  position: absolute;
+  top: 0;
+  right: 300px;
+  height: 360px;
+  width: 330px;
+}
+
+.iphone-image-2 {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  height: 360px;
+  width: 330px;
+}
+
+.fab {
+  color: red;
+}
+
+/* last-section */
+#last-section {
+  height: 400px;
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.last-head-part {
+  font-size: 19px;
+  margin-bottom: 30px;
+  /* text-transform: uppercase; */
+}
+
+.last-part-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-item {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.list-item:hover {
+  color: grey;
+}
+
+.app-store-image {
+  height: 70px;
+  display: block;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+/* .app-store-image:hover {
+  transform: scaleX(1.2);
+} */
+.google-play-image {
+  height: 70px;
+  cursor: pointer;
+}
