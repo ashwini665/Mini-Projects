@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-part {
+  position: relative;
+}
+.sea-image {
+  /* background-image: url("/Gym/images/photograph.webp"); */
+  background-color: powderblue;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.icon {
+  filter: invert(100%);
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.mid-part {
+  position: absolute;
+  top: 10px;
+  left: 250px;
+}
+
+ul {
+  list-style-type: none;
+  border-radius: 20px;
+  background-color: rgb(30, 17, 17);
+  padding: 10px;
+  overflow: hidden;
+  width: 500px;
+  height: 30px;
+  text-align: center;
+}
+
+li {
+  /* float: left; */
+  display: inline-block;
+}
+
+li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 25px;
+}
+
+li a:hover {
+  background-color: rgb(84, 73, 73);
+}
+
+.right-part input {
+  float: right;
+  position: absolute;
+  right: 100px;
+  top: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  outline: none;
+  width: 300px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.email {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  border: 2px solid white;
+  width: 550px;
+  /* margin: auto; */
+  height: 330px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px black;
+  text-align: center;
+}
+
+.box input {
+  display: block;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin: 10px auto;
+  /* margin-left: 10px; */
+  width: 350px;
+  box-shadow: 1px 1px 2px black;
+  outline: none;
+}
+
+.box .submit {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  width: 250px;
+  margin: 5px auto;
+  box-shadow: 1px 1px 2px white;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: rgb(239, 228, 228);
+  color: black;
+}
+
+form {
+  padding: 20px;
+}
+.box h3 {
+  color: white;
+  font-size: 20px;
+  /* text-align: center; */
+}
