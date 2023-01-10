@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .subscribe {
+        background-color: rgb(203, 17, 17);
+        border: none;
+        color: white;
+        padding: 10px;
+        width: 120px;
+        border-radius: 2px;
+        margin: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.15s;
+      }
+      .subscribe:hover {
+        background-color: rgba(163, 4, 4, 0.6);
+      }
+      .join {
+        background-color: #fff;
+        color: rgb(28, 28, 248);
+        border: 1px solid;
+        padding: 10px;
+        width: 75px;
+        border-radius: 2px;
+        margin: 1rem;
+        cursor: pointer;
+        transition: background-color 0.15s, color 1s;
+      }
+      .join:hover {
+        background-color: rgb(15, 133, 197);
+        color: #fff;
+      }
+      .tweet {
+        background-color: rgb(21, 139, 235);
+        color: white;
+        width: 85px;
+        border: none;
+        padding: 12px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 1rem;
+        transition: box-shadow 0.15s;
+      }
+      .tweet:hover {
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+      }
+      .request-now {
+        background-color: black;
+        color: white;
+        width: 120px;
+        padding: 6px;
+        margin: 1rem;
+        cursor: pointer;
+        transition: background-color 0.15s;
+      }
+      .request-now:hover {
+        background-color: rgba(12, 11, 11, 0.8);
+      }
+      .add-to-cart {
+        background-color: rgb(255, 216, 20);
+        color: black;
+        width: 170px;
+        padding: 7px;
+        border: none;
+        border-radius: 20px;
+        margin: 1rem;
+        cursor: pointer;
+        transition: background-color 0.15s;
+      }
+      .add-to-cart:hover {
+        background-color: rgba(227, 176, 9, 0.8);
+      }
+      .sign-up {
+        background-color: green;
+        color: #fff;
+        border: none;
+        width: 90px;
+        padding: 12px;
+        border-radius: 6px;
+        font-weight: bold;
+        margin: 1rem;
+        cursor: pointer;
+        transition: box-shadow 0.15s;
+      }
+      .sign-up:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+      .get-started {
+        background-color: rgb(89, 3, 194);
+        color: #fff;
+        width: 115px;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        margin: 1rem;
+        cursor: pointer;
+        transition: background-color 0.15s;
+      }
+      .get-started:hover {
+        background-color: rgba(80, 5, 167, 0.696);
+      }
+      .download {
+        background-color: #fff;
+        color: black;
+        border: 1px solid;
+        border-radius: 5px;
+        font-weight: bold;
+        width: 115px;
+        padding: 10px;
+        margin: 1rem;
+        cursor: pointer;
+        transition: background-color 0.15s;
+      }
+      .download:hover {
+        background-color: rgba(118, 115, 115, 0.6);
+      }
+      .company-website {
+        background-color: rgb(10, 102, 194);
+        color: #fff;
+        border: none;
+        width: 220px;
+        padding: 8px;
+        border-radius: 20px;
+        font-weight: bold;
+        margin: 1rem;
+        cursor: pointer;
+      }
+      .company-website:hover {
+        background-color: rgba(7, 23, 199, 0.897);
+      }
+      .save {
+        background-color: #fff;
+        color: rgb(8, 144, 241);
+        border: 1px solid rgb(5, 99, 171);
+        font-weight: bold;
+        width: 80px;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 1rem;
+        cursor: pointer;
+        transition: border 0.15s;
+      }
+      .save:hover {
+        border: 2px solid;
+        background-color: rgb(230, 241, 241);
+      }
+      a:hover {
+        color: rgb(192, 105, 6);
+      }
+      .add-cart {
+        background-color: rgb(255, 216, 20);
+        color: black;
+        width: 120px;
+        padding: 7px;
+        border: none;
+        border-radius: 20px;
+        margin-right: 0.5rem;
+        cursor: pointer;
+      }
+      .add-cart:hover {
+        background-color: rgb(244, 210, 41);
+      }
+      .add-cart:active {
+        background-color: rgba(255, 216, 20, 0.5);
+        /* background-color: #fff; */
+      }
+      .buy-now {
+        background-color: rgb(255, 164, 25);
+        color: black;
+        width: 120px;
+        padding: 7px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      .buy-now:hover {
+        background-color: rgb(230, 129, 15);
+      }
+      .buy-now:active {
+        background-color: rgba(255, 163, 25, 0.6);
+      }
+      .price-details {
+        color: green;
+        font-weight: bold;
+      }
+      .colorme {
+        background-color: #2874f0;
+        color: #fff;
+        padding: 8px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="subscribe">SUBSCRIBE</button>
+    <button class="join">JOIN</button>
+    <button class="tweet">Tweet</button>
+    <button class="request-now">Request Now</button>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="sign-up">Sign up</button>
+    <button class="get-started">Get started</button>
+    <button class="download">Download</button>
+    <button class="company-website">Apply on company website</button>
+    <button class="save">Save</button>
+    <hr />
+    <a href="https://www.amazon.in/">Back to Amazon</a>
+    <h2>Nike Black Running Shoes</h2>
+    <p class="price-details">$39 - in stock.</p>
+    <p>Free delivery tomorrow.</p>
+    <button class="add-cart">Add to Cart</button>
+    <button class="buy-now">Buy now</button>
+    <button class="colorme">coloMe</button>
+  </body>
+</html>
